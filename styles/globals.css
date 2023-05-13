@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400&display=swap');
+:root{
+  --bg-main: #131722;
+  --color-main:#fff;
+  --light-bg:#24baef;
+  --border-color: #949cb0;
+  --golden-color:#FFD700;
+}
+body{
+  background-color: var(--bg-main) !important;
+  /* color: var(--color-main); */
+  font-family: 'Montserrat', sans-serif !important;
+}
+.bg-main{
+  background-color: var(--bg-main);
+}
+.brdr{
+  border: solid 1px var(--border-color);
+  
+}
+nav{
+  color: var(--color-main) !important;
+}
+.text-blue{
+  color: var(--light-bg);
+}
+.text-light{
+  color: var(--color-main) !important;
+}
+footer{
+  background-color : var(--bg-main)
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.bg-lightblue{
+  background-color: var(--light-bg);
+}
+.vote{
+  background-color: var(--light-bg);
+  color: var(--color-main);
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.text-decoration{
+  text-decoration: none;
+}
+.star{
+  color: var(--golden-color)
+}
+.movie{
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  filter: grayscale(0.7);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 100%;
+}
+.movie:hover{
+  transform: scale(1.1 , 1.05);
+  -webkit-transform: scale(1.1 , 1.05);
+  -moz-transform: scale(1.1 , 1.05);
+  -ms-transform: scale(1.1 , 1.05);
+  -o-transform: scale(1.1 , 1.05);
+  filter: grayscale(0);
+}
+.movie .btn{
+  transition: transform 1s , opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: transform 1s , opacity 1s;
+  -moz-transition: transform 1s , opacity 1s;
+  -ms-transition: transform 1s , opacity 1s;
+  -o-transition: transform 1s , opacity 1s;
+}
+.movie:hover .btn{
+  opacity: 1;
+  transform: translateY(0%);
+}
+.category-link {
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+.category-link:hover {
+  background-color: rgba(50, 50, 93, 0.25);
+}
+.movieContanierimg{
+  width: 100% !important;
+  height: auto !important; 
+}
